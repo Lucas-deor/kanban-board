@@ -1,0 +1,16 @@
+
+<div class="card mb-3">
+  <form [formGroup]="quadroForm">
+    <div class="card-header text-center">
+      New
+    </div>
+    <div class="card-body">
+      <input formControlName="title" class="form-control form-control-sm text-center" type="text" placeholder="Title" aria-label=".form-control-sm example">
+      <div class="mb-3 mt-3">
+        <textarea formControlName="content" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+      <fa-icon (click)="createQuadro()" class="d-flex justify-content-center" [icon]="faPlusCircle" style="cursor: pointer"></fa-icon>
+    </div>
+  </form>
+
+</div>

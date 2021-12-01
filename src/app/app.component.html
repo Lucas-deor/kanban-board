@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <app-novo-quadro></app-novo-quadro>
+    </div>
+    <div class="col">
+      <app-to-do *ngFor="let quadro of quadros" [quadro]="quadro"></app-to-do>
+    </div>
+    <div class="col">
+      <app-doing></app-doing>
+    </div>
+    <div class="col">
+      <app-done></app-done>
+    </div>
+  </div>
+</div>
+
